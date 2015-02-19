@@ -1,3 +1,5 @@
+$(document).ready(function() {
+
     var table = $(".table")[0];
     var columns = table.rows[0].cells.length;
 $(".table td").attr("contenteditable", "true");
@@ -14,4 +16,5 @@ $(".add-column").click(function() {
     var template = "<td contenteditable></td>"
     $(".table tr").append(template);
     columns++;
+});
 });
